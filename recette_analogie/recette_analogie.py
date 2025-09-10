@@ -5,7 +5,7 @@ import warnings
 
 
 def r7_pesto(u: str):
-    """Traduction Python de R7_PeStO (même esprit “meme code”)."""
+    """Prépare un pesto maison pour environ 8 personnes."""
     toto = 80  # g of pgns ???
     cheese = "fr0maggio"  # italien ofc
     basil = "3/4 leafz?"  # idk combien ça fait
@@ -59,7 +59,6 @@ def make_homemade_pesto() -> str:
     def season():
         print("Saler et poivrer selon vos goûts.")
 
-    # Étapes de préparation
     prepare_ingredients()
     blend_ingredients()
     season()
@@ -71,4 +70,4 @@ if __name__ == "__main__":
     t = r7_pesto("go")
     pesto_msg = make_homemade_pesto()
     print(pesto_msg)
-    t.join()  # attendre l'affichage différé de r7_pesto
+    t.join()
